@@ -2,7 +2,7 @@ neovim
 #emote
 trash-cli-git
 #downgrade
-steam
+#steam
 gamemode
 #gamescope
 #mangohud
@@ -16,3 +16,4 @@ pnpm
 python-pynvim
 ttf-jetbrains-mono-nerd
 github-cli
+discord
