@@ -22,7 +22,7 @@ if pkg_installed sddm; then
 		sudo tar -xzf ${CloneDir}/Source/arcs/sddm.tar.gz -C /usr/share/
 		sudo touch /etc/sddm.conf.d/kde_settings.conf
 		sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
-		sudo cp /usr/share/sddm/themes/corners/kde_settings.conf /etc/sddm.conf.d/
+		sudo cp /usr/share/sddm/themes/aerial-sddm-theme/kde_settings.conf /etc/sddm.conf.d/
 	else
 		echo "sddm is already configured..."
 	fi
@@ -34,20 +34,6 @@ if pkg_installed sddm; then
 
 else
 	echo "WARNING: sddm is not installed..."
-fi
-
-# fish
-if pkg_installed fish; then
-
-	if [ ! -d ${HOME}/.config/fish ]; then
-		sudo mkdir -p /~${HOME}/.config/fish
-	fi
-
-	echo "configuring sddm..."
-	sudo tar -xzf ${CloneDir}/Source/arcs/fish.tar.gz -C /~${HOME}/.config/fish
-
-else
-	echo "WARNING: fish is not installed..."
 fi
 
 # dolphin
