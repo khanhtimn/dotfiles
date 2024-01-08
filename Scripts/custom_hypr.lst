@@ -54,13 +54,5 @@ ark
 eza|zsh
 #oh-my-zsh-git|zsh
 #zsh-theme-powerlevel10k|zsh oh-my-zsh-git
-pokemon-colorscripts-git|zsh
+pokemon-colorscripts-git
 hyprdots-ctl
-fcitx5
-fcitx5-unikey
-fcitx5-configtool
-nodejs
-pnpm
-python-pynvim
-ttf-jetbrains-mono-nerd
-github-cli
