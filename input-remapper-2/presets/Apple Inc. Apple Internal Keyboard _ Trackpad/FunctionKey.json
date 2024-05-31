@@ -1,0 +1,15 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 464,
+                "origin_hash": "bc9e1b8c8213dcb81baaa0ce0c0de60e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTCTRL",
+        "name": "Fn",
+        "mapping_type": "key_macro"
+    }
+]
