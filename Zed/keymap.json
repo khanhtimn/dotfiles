@@ -17,7 +17,9 @@
     "context": "Workspace",
 
     "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock"
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem"
     }
   },
 
@@ -29,7 +31,9 @@
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-`": "workspace::ToggleBottomDock",
-      "space e": "workspace::ToggleLeftDock"
+      "space e": "workspace::ToggleLeftDock",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem"
     }
   },
 
@@ -40,7 +44,9 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-`": "workspace::ToggleBottomDock"
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem"
     }
   },
   {
@@ -53,7 +59,9 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-`": "workspace::ToggleBottomDock",
-      "ctrl-t": "workspace::NewTerminal"
+      "ctrl-t": "workspace::NewTerminal",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem"
     }
   }
 ]
