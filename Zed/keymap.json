@@ -13,18 +13,22 @@
 // from the command palette.
 
 [
-  {
-    "context": "Workspace",
+  // {
+  //   "context": "Workspace",
 
-    "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock",
-      "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem"
-    }
-  },
+  //   "bindings": {
+  //     "ctrl-`": "workspace::ToggleBottomDock",
+  //     "shift-l": "pane::ActivateNextItem",
+  //     "shift-h": "pane::ActivatePrevItem"
+  //   }
+  // },
 
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {}
+  },
+  {
+    "context": "Dock || Terminal || Editor || ProjectPanel",
     "bindings": {
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
@@ -32,36 +36,43 @@
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-`": "workspace::ToggleBottomDock",
       "space e": "workspace::ToggleLeftDock",
-      "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem"
-    }
-  },
-
-  {
-    "context": "Dock",
-    "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-`": "workspace::ToggleBottomDock",
+      "space f f": "file_finder::Toggle",
+      "space g g": "editor::ToggleGitBlame",
       "shift-l": "pane::ActivateNextItem",
       "shift-h": "pane::ActivatePrevItem"
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "TabSwitcher",
     "bindings": {
-      "space e": "workspace::ToggleLeftDock"
+      "ctrl-k": "menu::SelectPrev",
+      "ctrl-j": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrev",
+      "ctrl-j": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "CommandPalette",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrev",
+      "ctrl-j": "menu::SelectNext"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock",
-      "ctrl-t": "workspace::NewTerminal",
-      "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem"
+      "ctrl-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space f": "file_finder::Toggle"
     }
   }
 ]
