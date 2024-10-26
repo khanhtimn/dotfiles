@@ -215,5 +215,4 @@ function pgrep($name) {
 }
 
 ## Final Line to set prompt
-#oh-my-posh init pwsh --config 'C:\Users\KhanhTIMN\AppData\Local\Programs\oh-my-posh\themes\bubblesline.omp.json' | Invoke-Expression
-
+Invoke-Expression (&starship init powershell)
