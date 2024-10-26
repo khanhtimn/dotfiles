@@ -5,6 +5,8 @@ set EDITOR $VISUAL
 
 fish_vi_key_bindings
 
+starship init fish | source
+
 # List Directory
 alias ls="lsd"
 alias l="ls -l"
