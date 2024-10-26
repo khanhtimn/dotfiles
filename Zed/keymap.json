@@ -13,66 +13,75 @@
 // from the command palette.
 
 [
-  // {
-  //   "context": "Workspace",
+    // {
+    //   "context": "Workspace",
 
-  //   "bindings": {
-  //     "ctrl-`": "workspace::ToggleBottomDock",
-  //     "shift-l": "pane::ActivateNextItem",
-  //     "shift-h": "pane::ActivatePrevItem"
-  //   }
-  // },
+    //   "bindings": {
+    //     "ctrl-`": "workspace::ToggleBottomDock",
+    //     "shift-l": "pane::ActivateNextItem",
+    //     "shift-h": "pane::ActivatePrevItem"
+    //   }
+    // },
 
-  {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {}
-  },
-  {
-    "context": "Dock || Terminal || Editor || ProjectPanel",
-    "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-`": "workspace::ToggleBottomDock",
-      "space e": "workspace::ToggleLeftDock",
-      "space f f": "file_finder::Toggle",
-      "space g g": "editor::ToggleGitBlame",
-      "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePrevItem"
+    {
+        "context": "Editor && VimControl && !VimWaiting && !menu",
+        "bindings": {
+            "=": "editor::Format",
+            "space e": "workspace::ToggleLeftDock",
+            "space f f": "file_finder::Toggle",
+            "space g b": "editor::ToggleGitBlameInline",
+            "space g B": "editor::ToggleGitBlame",
+            "shift-l": "pane::ActivateNextItem",
+            "shift-h": "pane::ActivatePrevItem"
+        }
+    },
+    {
+        "context": "Dock || Terminal || Editor || ProjectPanel",
+        "bindings": {
+            "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+            "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+            "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+            "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+            "ctrl-`": "workspace::ToggleBottomDock"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "space e": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "TabSwitcher",
+        "bindings": {
+            "ctrl-k": "menu::SelectPrev",
+            "ctrl-j": "menu::SelectNext"
+        }
+    },
+    {
+        "context": "FileFinder",
+        "bindings": {
+            "ctrl-k": "menu::SelectPrev",
+            "ctrl-j": "menu::SelectNext"
+        }
+    },
+    {
+        "context": "CommandPalette",
+        "bindings": {
+            "ctrl-k": "menu::SelectPrev",
+            "ctrl-j": "menu::SelectNext"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "ctrl-t": "workspace::NewTerminal"
+        }
+    },
+    {
+        "context": "EmptyPane || SharedScreen",
+        "bindings": {
+            "space f": "file_finder::Toggle"
+        }
     }
-  },
-  {
-    "context": "TabSwitcher",
-    "bindings": {
-      "ctrl-k": "menu::SelectPrev",
-      "ctrl-j": "menu::SelectNext"
-    }
-  },
-  {
-    "context": "FileFinder",
-    "bindings": {
-      "ctrl-k": "menu::SelectPrev",
-      "ctrl-j": "menu::SelectNext"
-    }
-  },
-  {
-    "context": "CommandPalette",
-    "bindings": {
-      "ctrl-k": "menu::SelectPrev",
-      "ctrl-j": "menu::SelectNext"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-t": "workspace::NewTerminal"
-    }
-  },
-  {
-    "context": "EmptyPane || SharedScreen",
-    "bindings": {
-      "space f": "file_finder::Toggle"
-    }
-  }
 ]
