@@ -58,7 +58,9 @@
 {
     "context": "Terminal",
     "bindings": {
-        "ctrl-t": "workspace::NewTerminal"
+        "ctrl-t": "workspace::NewTerminal",
+        "shift-l": "pane::ActivateNextItem",
+        "shift-h": "pane::ActivatePrevItem"
     }
 },
 {
