@@ -1,0 +1,68 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+    "vim_mode": true,
+    "vim": {
+        "use_system_clipboard": "always",
+        "toggle_relative_line_numbers": true,
+        "use_multiline_find": true,
+        "command_aliases": {
+            "W": "w",
+            "Wq": "wq",
+            "Q": "q"
+        }
+    },
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "One Dark"
+    },
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_size": 16,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_size": 16,
+    "preferred_line_length": 120,
+    "soft_wrap": "preferred_line_length",
+    "tab_size": 4,
+    "indent_guides": {
+        "enabled": true,
+        "coloring": "indent_aware"
+    },
+    "git": {
+        "inline_blame": {
+            "enabled": false,
+            "delay_ms": 500
+        }
+    },
+    "tab_bar": {
+        "show": true
+    },
+    "scrollbar": {
+        "show": "never"
+    },
+    "assistant": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4o"
+        },
+        "version": "2"
+    },
+    "terminal": {
+        "alternate_scroll": "on",
+        "blinking": "terminal_controlled",
+        "dock": "bottom",
+        "toolbar": {
+            "title": true
+        }
+    },
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false
+    }
+}
