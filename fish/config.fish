@@ -4,6 +4,7 @@ set VISUAL nvim
 set EDITOR $VISUAL
 
 fish_vi_key_bindings
+fish_add_path ~/.cargo/bin
 
 starship init fish | source
 
